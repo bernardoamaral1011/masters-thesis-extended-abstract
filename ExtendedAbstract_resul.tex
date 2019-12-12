@@ -195,15 +195,15 @@ Due to the numerous disadvantages observed with data from this work, it can be i
 
 The algorithms with the best performance overall were IDW and OK, followed by FBNs, LI and lastly NN.
 
-In Table \ref{table:correlation-coef}, correlation coefficients between every station of the dataset were calculated. It can be observed that the stations with shared highest correlation coefficients were relatively close in terms of geographical location, despite an overall high correlation between almost every station. However, the good performance of IDW with \textit{p} = 0, which means that distance between data points is not considered for the interpolation, suggests that the spatial correlation between stations is very low.
+In Table \ref{table:correlation-coef}, correlation coefficients between every station of the dataset were calculated. It can be observed that the stations with shared highest correlation coefficients were relatively close in terms of geographical location, despite an overall high correlation between almost every station. However, the good performance of IDW with \textit{p} = 0, which means that distance between data points is not considered for the interpolation, suggests that the distance correlation between stations is very low.
 
 Air dispersion and movement in urban environments is an environmental problem of high complexity. In the last 5 years, in the city of Lisbon, the dataset reveals that the city of Lisbon has an overall low concentration of PM10, with a maximum mean value for the whole dataset of 34.22 $\mu g/m^3$ in the station of Avenida da Liberdade, which is a value classified as \textit{Good}.
 
-The fact that these SIMs were tested for periods where no big pollution phenomena affected the city, could degrade the sense of spatial correlation between the stations in the city, because the collected data was predominantly constant and similar between stations, as is the IDW interpolation.
+The fact that these SIMs were tested for periods where no big pollution phenomena affected the city, could degrade the sense of distance correlation between the stations in the city, because the collected data was predominantly constant and similar between stations, as is the IDW interpolation.
 
-Several other environmental factors can have influenced the spatial correlation of PM10 concentration throughout the city, such as the wind direction, the temperature, humidity, the altitude of the interpolation point and the traffic density and pollution, as well as the presence of buildings and other geological and geographical barriers to airflow.
+Several other environmental factors can have influenced the correlation of PM10 concentration throughout the city, such as the wind direction, the temperature, humidity, the altitude of the interpolation point and the traffic density and pollution, as well as the presence of buildings and other geological and geographical barriers to airflow.
 
-In what regards FBNs performance, no conclusions can be obtained towards its performance regarding multidimensional spatial interpolation problems, due to the low spatial correlation between the data points of the performed experiments. However, it can be concluded that FBNs are not suitable for problems which require real time interpolations with fast computations and construction of interpolation surfaces, due to the observed high computing times.
+In what regards FBNs performance, no conclusions can be obtained towards its performance regarding multidimensional spatial interpolation problems, due to the low distance correlation between the data points of the performed experiments. However, it can be concluded that FBNs are not suitable for problems which require real time interpolations with fast computations and construction of interpolation surfaces, due to the observed high computing times.
 
 \subsubsection{Web Visualization Application}
 

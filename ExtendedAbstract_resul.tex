@@ -57,13 +57,13 @@ Colored cells represent the location where the developed sensor was placed durin
 
 In Figure \ref{fig:system-calibration}, simultaneous measures of both sensors during the placement period can be observed, along with RH measures obtained for Lisbon during the same period. The absolute error between the measures of the different sensors is 14.40 $\mu g/m^3$.
 
-The PMS5003 sensor often obtained lower measures. However, sometimes it peaked, surpassing the MP101M measures. This only happened for high values of RH. When the RH decreases, there is often less error between sensors.
+The PMS5003 sensor often obtained lower measures. However, sometimes it peaked, surpassing the reference sensor, the Environnement S.A. Model MP101M measures. This only happened for high values of RH. When the RH decreases, there is often less error between sensors.
 \setlength{\abovecaptionskip}{0pt plus 0pt minus 3pt}
 \begin{figure*}[ht]
 \centering
 \footnotesize
 \includegraphics[width=0.9\textwidth]{./Images/calibration-thin-article.png}
-\caption{PM10 concentrations reported by the sensors and RH.}
+\caption{PM10 concentrations reported by the sensors and simultaneous RH values.}
 \label{fig:system-calibration}
 \end{figure*}
 
@@ -108,7 +108,7 @@ In what regards FBN interpolation, both testing and training epochs, network siz
 
 \subsubsection{SIMs Comparison}
 
-Results regarding MAE and RMSE performance are presented in table Table \ref{table:sim-comparison}, for each algorithm and each target station, for a total of 43 956 inferences.
+Results regarding MAE and RMSE performance are presented in Table \ref{table:sim-comparison}, for each algorithm and each target station, for a total of 43 956 inferences.
 
 \begin{table}[H]
 \centering
@@ -139,7 +139,7 @@ The algorithms with overall lower MAE and RMSE results were IDW and OK. NN had t
 \label{fig:performance-histograms}
 \end{figure}
 
-It should additionally be noted that, for all the inferences done simultaneously, FBNs execution times were around 9 hours, while remaining algorithms only took from approximately 5 minutes.
+It should additionally be noted that, for all the inferences done simultaneously, FBNs execution times were around 9 hours, while remaining algorithms only took approximately 5 minutes.
 
 \subsection{Online Data Visualization Web Application}
 
@@ -149,7 +149,7 @@ The application design is focused in the user experience, and allows the user to
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=0.49\textwidth]{./Images/developed-visualization.PNG}
+\includegraphics[width=0.47\textwidth]{./Images/developed-visualization.PNG}
 \caption{Developed Web Application final result.}
 \label{fig:developed-visualization}
 \end{figure}
@@ -166,7 +166,7 @@ Before assessing measurement performance, it is important to note that the obtai
 
 % observations + error statistics
 
-As mentioned, during the sensor placement and comparison period, the PMS5003 sensor often obtained lower measures (Figure \ref{fig:scatter-measurements}). However, sometimes it peaked, surpassing the MP101M measures. This only happened for high values of RH. It could additionally be observed, in Figure \ref{fig:system-calibration}, that when the RH is decreasing, there is often less error is observed between the sensors.
+As mentioned, during the sensor placement and comparison period, the PMS5003 sensor often obtained lower measures (Figure \ref{fig:scatter-measurements}). However, sometimes it peaked, surpassing the MP101M measures. This only happened for high values of RH. It could additionally be observed, in Figure \ref{fig:system-calibration}, that when the RH is decreasing, there is often less error observed between the sensors.
 
 The average absolute error between the measures of the different sensors (14.40 $\mu g/m^3$) is slightly above the smallest scale division of the classification in Table \ref{table:pm10-classification}. The daily pearson correlation coefficients showed inconsistency in the linearity between sensor readings.
 

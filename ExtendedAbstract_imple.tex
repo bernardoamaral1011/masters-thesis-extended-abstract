@@ -5,13 +5,13 @@ The methodologies and implementation details concerning the systems developed in
 
 \subsection{PM10 Monitoring System Assembly}
 
-The low-cost PM10 monitoring system consist of a PM10 sensor, a microcontroller board with a NB-IoT chipset and a step-up voltage converter.
+The low-cost PM10 monitoring system consists of a PM10 sensor, a microcontroller board with a NB-IoT chipset and a step-up voltage converter.
 The PM10 sensor used was the PMS5003, a low-cost light-scattering optical sensor, which outputs its measures through a digital signal, processed by a microprocessor in real-time. It operates in temperatures between -10ºC and 60ºC, and relative humidity from 0 to 99\%.
 
 The development board used was SODAQ SFF R412M, which has low power consumption and allows the use of both NB-IoT and LTE-M technologies. It contains an integrated micro-controller, the Atmel SAMD21, which allows it to be programmed through the same
 tools as Arduino compatible boards.
 
-Subscriber identity module cards provided by the mobile operators NOS and Altice Portugal were used for this board NB-IoT remote communications. These card were previously configured by the mobile operators according to the specifications needed for its optimal use in NB-IoT devices. AT commands are used to communicate through the NB-IoT module. The commands used in the implementation of the developed system, and in the micro-controller program, along with its purpose are presented in Table \ref{table:atCommands}.
+Subscriber identity module cards provided by the mobile operators NOS and Altice Portugal were used for this board NB-IoT remote communications. These cards were previously configured by the mobile operators according to the specifications needed for its optimal use in NB-IoT devices. AT commands are used to communicate through the NB-IoT module. The commands used in the implementation of the developed system, and in the micro-controller program, along with its purpose are presented in Table \ref{table:atCommands}.
 
 \begin{table}[ht]
 \footnotesize

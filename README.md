@@ -1,3 +1,3 @@
-# Extended-Abstract
+# Masters Thesis Extended Abstract
 
-Masters Dissertation Extended Abstract: "Air Quality Monitoring and Interpolation System for IoT Applications"
+Masters Thesis Extended Abstract: "Air Quality Monitoring and Interpolation System for IoT Applications"
